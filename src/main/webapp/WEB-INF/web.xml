@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<web-app>
+    <display-name>Archetype Created Web Application</display-name>
+    <servlet>
+        <servlet-name>jersey-serlvet</servlet-name>
+        <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+        <init-param>
+            <param-name>jersey.config.server.provider.packages</param-name>
+            <param-value>com.ooad.web.api</param-value>
+        </init-param>
+        <init-param>
+            <param-name>jersey.config.server.provider.classnames</param-name>
+            <param-value>org.glassfish.jersey.media.multipart.MultiPartFeature</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>jersey-serlvet</servlet-name>
+        <url-pattern>/api/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <display-name>LoginController</display-name>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>com.ooad.web.controller.LoginController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <display-name>SellerLoginController</display-name>
+        <servlet-name>SellerLogin</servlet-name>
+        <servlet-class>com.ooad.web.controller.SellerLoginController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SellerLogin</servlet-name>
+        <url-pattern>/sellerlogin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <display-name>LogoutController</display-name>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>com.ooad.web.controller.LogoutController</servlet-class>
+    </servlet>
+
+    <servlet>
+        <display-name>RegisterController</display-name>
+        <servlet-name>Register</servlet-name>
+        <servlet-class>com.ooad.web.controller.RegisterController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <display-name>SellerRegisterController</display-name>
+        <servlet-name>SellerRegister</servlet-name>
+        <servlet-class>com.ooad.web.controller.SellerRegisterController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SellerRegister</servlet-name>
+        <url-pattern>/sellerregister</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <display-name>ItemController</display-name>
+        <servlet-name>item</servlet-name>
+        <servlet-class>com.ooad.web.controller.ItemController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>item</servlet-name>
+        <url-pattern>/item</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <display-name>SellerHomePageController</display-name>
+        <servlet-name>SellerHome</servlet-name>
+        <servlet-class>com.ooad.web.controller.SellerHomePageController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SellerHome</servlet-name>
+        <url-pattern>/seller</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <display-name>SellerInfoController</display-name>
+        <servlet-name>SellerInfo</servlet-name>
+        <servlet-class>com.ooad.web.controller.SellerInfoController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SellerInfo</servlet-name>
+        <url-pattern>/infoseller</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <display-name>SellerUpdateInfoController</display-name>
+        <servlet-name>SellerUpdateInfo</servlet-name>
+        <servlet-class>com.ooad.web.controller.SellerUpdateInfoController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SellerUpdateInfo</servlet-name>
+        <url-pattern>/sellerupdate</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <display-name>CartController</display-name>
+        <servlet-name>Cart</servlet-name>
+        <servlet-class>com.ooad.web.controller.CartController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Cart</servlet-name>
+        <url-pattern>/cart</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <display-name>CreateOrderController</display-name>
+        <servlet-name>CreateOrder</servlet-name>
+        <servlet-class>com.ooad.web.controller.CreateOrderController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateOrder</servlet-name>
+        <url-pattern>/checkout</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <display-name>AddAddressController</display-name>
+        <servlet-name>AddAddress</servlet-name>
+        <servlet-class>com.ooad.web.controller.AddAddressController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddAddress</servlet-name>
+        <url-pattern>/addaddress</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <display-name>OrderController</display-name>
+        <servlet-name>orderController</servlet-name>
+        <servlet-class>com.ooad.web.controller.OrderController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>orderController</servlet-name>
+        <url-pattern>/order</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <display-name>ItemsController</display-name>
+        <servlet-name>Items</servlet-name>
+        <servlet-class>com.ooad.web.controller.ItemsController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Items</servlet-name>
+        <url-pattern>/items</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <display-name>AdminController</display-name>
+        <servlet-name>Admin</servlet-name>
+        <servlet-class>com.ooad.web.controller.AdminController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Admin</servlet-name>
+        <url-pattern>/admin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <display-name>WishList</display-name>
+        <servlet-name>wishList</servlet-name>
+        <servlet-class>com.ooad.web.controller.WishListController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>wishList</servlet-name>
+        <url-pattern>/list</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <display-name>MyOrdersController</display-name>
+        <servlet-name>MyOrders</servlet-name>
+        <servlet-class>com.ooad.web.controller.MyOrdersController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyOrders</servlet-name>
+        <url-pattern>/myorders</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <display-name>VerifyRegisteredEmail</display-name>
+        <servlet-name>verifyemail</servlet-name>
+        <servlet-class>com.ooad.web.controller.VerifyRegisteredEmail</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>verifyemail</servlet-name>
+        <url-pattern>/verifyregisteredemail</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <display-name>TescoPayController</display-name>
+        <servlet-name>tescopay</servlet-name>
+        <servlet-class>com.ooad.web.controller.TescoPayController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>tescopay</servlet-name>
+        <url-pattern>/tescopay</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <display-name>ReportController</display-name>
+        <servlet-name>report</servlet-name>
+        <servlet-class>com.ooad.web.controller.ReportController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>report</servlet-name>
+        <url-pattern>/report</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <display-name>SellerItemsController</display-name>
+        <servlet-name>selleritems</servlet-name>
+        <servlet-class>com.ooad.web.controller.SellerItemsController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>selleritems</servlet-name>
+        <url-pattern>/selleritems</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <display-name>SellerUpdateItemController</display-name>
+        <servlet-name>updateitem</servlet-name>
+        <servlet-class>com.ooad.web.controller.SellerUpdateItemController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateitem</servlet-name>
+        <url-pattern>/item/update</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <display-name>ExamController</display-name>
+        <servlet-name>exam</servlet-name>
+        <servlet-class>com.ooad.web.controller.ExamController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>exam</servlet-name>
+        <url-pattern>/exam</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
