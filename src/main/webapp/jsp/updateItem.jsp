@@ -4,13 +4,7 @@
 <%@ page import="com.ooad.web.model.Offer.Offer" %>
 <%@ page import="com.ooad.web.model.Offer.DiscountOffer" %>
 <%@ page import="com.ooad.web.model.Offer.PriceOffer" %>
-<%@ page import="com.ooad.web.model.Offer.BuyXGetYOffer" %><%--
-  Created by IntelliJ IDEA.
-  User: minal
-  Date: 17/3/18
-  Time: 10:22 PM
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="com.ooad.web.model.Offer.BuyXGetYOffer" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
