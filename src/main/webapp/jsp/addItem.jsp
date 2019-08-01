@@ -1,12 +1,5 @@
 <%@ page import="com.ooad.web.utils.TokenAuth" %>
-<%@ page import="com.ooad.web.model.Seller" %><%--
-  Created by IntelliJ IDEA.
-  User: minal
-  Date: 17/2/18
-  Time: 1:20 AM
-  To change this template use File | Settings | File Templates.
---%>
-
+<%@ page import="com.ooad.web.model.Seller" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 

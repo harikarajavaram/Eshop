@@ -1,7 +1,3 @@
-/*
- * Created by Shravan on  14/2/18 11:52 PM.
- * Copyright (c) 2018. All rights reserved.
- */
 
 package com.ooad.web.controller;
 

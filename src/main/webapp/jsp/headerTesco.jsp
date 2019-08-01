@@ -1,9 +1,5 @@
 <%@ page import="com.ooad.web.dao.ItemCategoryDao" %>
-<%@ page import="com.ooad.web.model.ItemCategory" %><%--
-  ~ Created by Shravan on  4/2/18 7:46 PM.
-  ~ Copyright (c) 2018. All rights reserved.
-  --%>
-
+<%@ page import="com.ooad.web.model.ItemCategory" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <link rel="stylesheet" href="css/headerTesco.css"/>

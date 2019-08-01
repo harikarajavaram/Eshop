@@ -1,11 +1,7 @@
 <%@ page import="com.ooad.web.model.Item" %>
 <%@ page import="com.ooad.web.model.Offer.DiscountOffer" %>
 <%@ page import="com.ooad.web.model.Offer.PriceOffer" %>
-<%@ page import="com.ooad.web.model.Offer.BuyXGetYOffer" %><%--
-  ~ Created by Harsha Raj on 18/02/18 15:37
-  ~ Copyright (c) 2018. All rights reserved.
-  --%>
-
+<%@ page import="com.ooad.web.model.Offer.BuyXGetYOffer" %>
 <html>
 <head>
     <meta charset="utf-8">
