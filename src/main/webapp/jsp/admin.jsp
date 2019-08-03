@@ -1,3 +1,4 @@
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 
@@ -46,7 +47,7 @@
                     <a class="a-link-nav-icon" tabindex="-1" href="/">
 
 
-                    <i class="a-icon a-icon-logo" aria-label="Amazon"><span class="a-icon-alt">Amazon</span></i>
+                    <i class="a-icon a-icon-logo" aria-label="Amazon"><span class="a-icon-alt">Tesco</span></i>
 
 
                     <i class="a-icon a-icon-domain-in a-icon-domain"></i>

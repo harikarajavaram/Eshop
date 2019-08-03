@@ -14,78 +14,145 @@
        }
    }
 %>
-<link rel="stylesheet" href="/css/fontawesome-all.min.css">
-<link rel="stylesheet" href="">
+<link rel="stylesheet" href="../css/fontawesome-all.min.css">
 <link rel="stylesheet" href="../css/bootstrap.min.css">
 <link rel="stylesheet" href="../css/bootstrap-dropdownhover.css">
 <link rel="stylesheet" href="../css/header.css">
+
+<link type="text/css" rel="stylesheet" href="../css/slick.css"/>
+<link type="text/css" rel="stylesheet" href="../css/slick-theme.css"/>
+<link type="text/css" rel="stylesheet" href="../css/nouislider.min.css"/>
+<link rel="stylesheet" href="../css/font-awesome.min.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css"/>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
 <script type="text/javascript" src="../js/jquery.min.js"></script>
 <script type="text/javascript" src="../js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="../js/jquery.cookie.js"></script>
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script src="../js/bootstrap-dropdownhover.js"></script>
-<script src="js/header.js"></script>
-<header class="container-fluid header">
-    <div class="row nav-belt ">
-        <div class="logo col-lg-2 col-md-2">
-            <a href="/" class="nav-logo-link"><img src="../images/logo.png" alt=""></a>
-        </div>
-        <div class="col-lg-6 col-md-6">
-            <div class="row  search-box ">
-                <form action="" id="item-search" style="height: inherit">
-                    <div class="col-lg-2 col-md-2 search-category">
-                        <select name="" id="nav-search-select">
-                            <option value="all">All Categories</option>
-                            <% final ItemCategoryDao itemCategoryDao = new ItemCategoryDao();
-                                ArrayList<ItemCategory> itemCategories = (ArrayList<ItemCategory>) itemCategoryDao.getAllCategories();
-                                for (ItemCategory itemCategory : itemCategories) { %>
-                            <option value="<%= itemCategory.getName()%>"><%= itemCategory.getDisplayName()%>
-                            </option>
-                            <% }%>
-                            <option>All Categories</option>
-                        </select>
-                    </div>
-                    <input class="col-lg-9 col-md-9 search-input" type="text">
-                    <div class="col-lg-1 col-md-1 search-icon" id="search-icon">
-                        <i class="fa fa-search fa-1g pull-right icn" aria-hidden="true"></i>
-                    </div>
-                </form>
+<script src="../js/header.js"></script>
 
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-4">
-            <img src="../images/tesco_app_quiz.jpg" alt="">
-        </div>
-    </div>
-    <div class="row nav-main">
-        <div class="col-lg-3 col-md-3">
-            <div class="row nav-left">
-                <div class="col-md-6 nav-border-round">
+<script src="../js/slick.min.js"></script>
+<script src="../js/nouislider.min.js"></script>
+<script src="../js/jquery.zoom.min.js"></script>
+<script src="../js/main.js"></script>
+<!-- HEADER -->
+        <header>
+
+
+            <!-- MAIN HEADER -->
+            <div id="header">
+                <!-- container -->
+                <div class="container">
+                    <!-- row -->
                     <div class="row">
-                        <div class="col-md-2 " id="map-location-picker">
-                            <img src="../images/location.png" alt="">
+                        <!-- LOGO -->
+                        <div class="col-md-2">
+                            <div class="header-logo" style="margin-top: 15px">
+                                <a href="/" class="logo">
+                                    <img src="../images/logo.png" alt="" height="35" width="100">
+                                </a>
+                            </div>
                         </div>
-                        <div class="col-md-10" id="nav-deliver-div">
-                            <a href="#" id="nav-deliver">
-                                <span style="font-size: 12px;font-weight: 400; ">Deliver to
-                                    <%= (user==null)? "" : user.getUserName() %> </span>
-                                <br><p id="loc">Bangalore 560100</p>
-                            </a>
+                        <!-- /LOGO -->
+
+                        <!-- SEARCH BAR -->
+                        <div class="col-md-7">
+                            <div class="header-search">
+                                <form action="" id="item-search" >
+                                    <select class="input-select" name="" id="nav-search-select">
+                                        <option value="all">All Categories</option>
+                                        <% final ItemCategoryDao itemCategoryDao = new ItemCategoryDao();
+                                            ArrayList<ItemCategory> itemCategories = (ArrayList<ItemCategory>) itemCategoryDao.getAllCategories();
+                                            for (ItemCategory itemCategory : itemCategories) { %>
+                                        <option value="<%= itemCategory.getName()%>"><%= itemCategory.getDisplayName()%>
+                                        </option>
+                                        <% }%>
+                                    </select>
+                                    <input class="input" placeholder="Search here" type="text">
+                                    <button id="search-icon" class="search-btn">Search</button>
+                                </form>
+                            </div>
                         </div>
+                        <!-- /SEARCH BAR -->
+
+                        <!-- ACCOUNT -->
+                        <div class="col-md-3 clearfix">
+                            <div class="header-ctn">
+                                <% if(user == null) {%>
+                                <!-- Account -->
+                                <div>
+                                    <a href="/login">
+                                        <i class="fa fa-sign-out"></i>
+                                        <span>Login</span>
+                                    </a>
+                                </div>
+                                <!-- /Account -->
+                                <% } else { %>
+                                <!-- Account -->
+                                <div>
+                                    <a href="/" id="nav-logout">
+                                        <i class="fa fa-sign-in"></i>
+                                        <span>Logout</span>
+                                    </a>
+                                </div>
+                                <!-- /Account -->
+                                <%}%>
+                                
+
+                                <!-- Cart -->
+                                <div class="dropdown">
+                                    <a href="/cart">
+                                        <i class="fa fa-shopping-cart"></i>
+                                        <span>Your Cart</span>
+                                        <div class="qty" id="cart-contents"><%=(user==null)? 0:user.getCart().size()%></div>
+                                    </a>
+                                </div>
+                                <!-- /Cart -->
+
+                                <!-- Menu Toogle -->
+                                <div class="menu-toggle">
+                                    <a href="#">
+                                        <i class="fa fa-bars"></i>
+                                        <span>Menu</span>
+                                    </a>
+                                </div>
+                                <!-- /Menu Toogle -->
+                            </div>
+                        </div>
+                        <!-- /ACCOUNT -->
                     </div>
+                    <!-- row -->
                 </div>
-                <div class="col-md-6">
-                    <div class="dropdown nav-border-round">
-                        <a class="dropdown-toggle" type="button" id="nav-shopby" data-toggle="dropdown"
-                           data-hover="dropdown">
-                            <span style="font-size: 12px; font-weight: 400">shop by</span>
-                            <br>Category <i class="fa fa-caret-down" aria-hidden="true"></i>
-                        </a>
+                <!-- container -->
+            </div>
+            <!-- /MAIN HEADER -->
+        </header>
+        <!-- /HEADER -->
+        <!-- NAVIGATION -->
+        <nav id="navigation">
+            <!-- container -->
+            <div class="container">
+                <!-- responsive-nav -->
+                <div id="responsive-nav">
+                    <!-- NAV -->
+                    <ul class="main-nav nav navbar-nav">
+                        <li><a href="/">Home</a></li>
+                        <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Categories
+                        <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <%for (ItemCategory itemCategory : itemCategories) { %>
                             <li class="dropdown">
                                 <a href="#"><%=itemCategory.getDisplayName()%></a>
                                 <% if(itemCategory.getDisplayName().equals("Others")) continue;%>
+                                <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <% ArrayList<ItemSubCategory> itemsubCategories = (ArrayList<ItemSubCategory>) itemCategoryDao.getAllsubCategories(itemCategory.getId());
                                         for (ItemSubCategory itemsubCategory : itemsubCategories) { %>
@@ -95,67 +162,34 @@
                             </li>
                             <%}%>
                         </ul>
-                    </div>
+                    </li>
+                        <li><a href="/myorders">My Orders</a></li>
+                        <li><a href="/list">My List</a></li>
+                        <li><a href="/tescopay">Tesco Pay</a></li>
+                        <li><a href="/sellerlogin">Sell</a></li>
+                        <% if(user!=null && user.getEmailId().equals("admin@admin.com")) { %>
+                            <li><a href="/admin">Admin</a></li>
+                        <%}%>
+                    </ul>
+                    <!-- <ul class="dropdown-menu">
+                        <li>Categories</li>
+                        <%for (ItemCategory itemCategory : itemCategories) { %>
+                        <li class="dropdown">
+                            <a href="#"><%=itemCategory.getDisplayName()%></a>
+                            <% if(itemCategory.getDisplayName().equals("Others")) continue;%>
+                            <ul class="dropdown-menu">
+                                <% ArrayList<ItemSubCategory> itemsubCategories = (ArrayList<ItemSubCategory>) itemCategoryDao.getAllsubCategories(itemCategory.getId());
+                                    for (ItemSubCategory itemsubCategory : itemsubCategories) { %>
+                                    <li><a href="/items?category=<%=itemCategory.getName()%>&subcategory=<%=itemsubCategory.getDisplayName()%>"><%=itemsubCategory.getDisplayName()%></a></li>
+                                <%}%>
+                            </ul>
+                        </li>
+                        <%}%>
+                    </ul> -->
+                    <!-- /NAV -->
                 </div>
+                <!-- /responsive-nav -->
             </div>
-        </div>
-        <div class="col-lg-5 col-md-6">
-            <div class="row nav-fill">
-                <br>
-                <a href="#">
-                    <%= (user==null)? "your":user.getUserName()%>
-                    Tesco.in</a> &nbsp;&nbsp;&nbsp;
-                <a href="/tescopay">Tesco Pay</a>&nbsp;&nbsp;&nbsp;
-                <a href="/sellerlogin">Sell</a>&nbsp;&nbsp;&nbsp;
-                <% if(user!=null && user.getEmailId().equals("admin@admin.com")) { %>
-                    <a href="/admin">admin</a> &nbsp;&nbsp;
-                <%}%>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-3">
-            <div class="row nav-left">
-                <div class="col-md-4 nav-border-round" id="nav-account">
-                    <% if(user == null) {%>
-                        <a href="/login">
-                            <span class="nav-line-1">Hello, Sign in </span><br>
-                            <span class="nav-line-2">Your Orders</span>
-                            <i class="fa fa-caret-down" aria-hidden="true"></i>
-                        </a>
-                    <% } else { %>
-                    <div class="dropdown nav-border-round">
-                        <a href="#" class="dropdown-toggle" id = "nav-signIn" data-toggle="dropdown" data-hover="dropdown">
-                            <span class="nav-line-1">Hello <%= user.getUserName()%> </span><br>
-                            <span class="nav-line-2">Your Orders</span>
-                            <i class="fa fa-caret-down" aria-hidden="true"></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#" id="nav-logout">Logout</a></li>
-                            <li><a href="#">Your account</a></li>
-                            <li><a href="/list">Your List</a></li>
-                            <li><a href="/myorders">Your Orders</a></li>
-                        </ul>
-                    </div>
-                    <%}%>
-                </div>
-                <div class="col-md-2 nav-border-round" id="nav-prime">
-                    <a href="#">
-                        <span class="nav-line-1">Try</span><br>
-                        <span class="nav-line-2"> Prime</span>
-                        <i class="fa fa-caret-down" aria-hidden="true"></i>
-                    </a>
-                </div>
-                <div class="col-md-3 nav-border-round" id="nav-yourlist">
-                    <a href="/list">
-                        <span class="nav-line-1">Your </span><br>
-                        <span class="nav-line-2">Lists </span> <i class="fa fa-caret-down" aria-hidden="true"></i>
-                    </a>
-                </div>
-                <a href="/cart">
-                    <div class="col-md-3 cart">
-                        <span id="cart-contents"><%=(user==null)? 0:user.getCart().size()%></span>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</header>
+            <!-- /container -->
+        </nav>
+        <!-- /NAVIGATION -->

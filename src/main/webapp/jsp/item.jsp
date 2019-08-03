@@ -2,6 +2,7 @@
 <%@ page import="com.ooad.web.model.Offer.DiscountOffer" %>
 <%@ page import="com.ooad.web.model.Offer.PriceOffer" %>
 <%@ page import="com.ooad.web.model.Offer.BuyXGetYOffer" %>
+
 <html>
 <head>
     <meta charset="utf-8">
@@ -24,10 +25,10 @@
 </head>
 <body>
 <%@include file="header.jsp" %>
-<div class="container-fluid">
+<div class="container-fluid" style="margin-top: 40px;margin-bottom: 40px;">
     <div class="row">
         <div class="col-lg-4">
-            <img id = "prodImage" width="346"  src=<%=item.getUrl()%> height="346" class = "img-responsive" alt="watch"   >
+            <img id = "prodImage" width="346"  src=<%=item.getUrl()%> height="346" class = "img-responsive" alt=""   >
         </div>
         <div class="col-lg-5">
             <h1 id="title">
@@ -147,7 +148,7 @@
                     <i class="fa fa-Pinterest"></i>
                 </a>
             </span>
-            <img id="purchase_protection" src="/images/tesco_purchase_protection.JPG" class="img-responsive" width="248" alt="Purchase Protection">
+            
             <div class="item-box">
                 <div class="item-column">
                     <span class="dropdown">

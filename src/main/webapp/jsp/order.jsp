@@ -123,7 +123,7 @@
                     Estimated delivery:  19 Mar 2018 - 21 Mar 2018
                 </h3>
                 <div class="col-lg-2">
-                    <img id = "prodImage<%=oi.getId()%>" width="130"  src="<%=oi.getItem().getUrl()%>" height="130" class = "img-responsive" alt="watch">
+                    <img id = "prodImage<%=oi.getId()%>" width="130"  src="<%=oi.getItem().getUrl()%>" height="130" class = "img-responsive" alt="">
                 </div>
                 <div class="col-lg-10">
                     <p id="productTitle" class="btn-link"><%=oi.getItem().getName()%></p> Sold by <a href="#" id="sellerName"><%=oi.getItem().getSeller().getUserName()%></a>
@@ -144,7 +144,7 @@
 <%--<div class="item-box-big">--%>
 <%--<div class="row">--%>
 <%--<div class="col-lg-4">--%>
-<%--<img id = "prodImage" width="175"  height="200" class = "img-responsive" alt="watch"   >--%>
+<%--<img id = "prodImage" width="175"  height="200" class = "img-responsive" alt=""   >--%>
 <%--</div>--%>
 <%--<div class="col-lg-5">--%>
 <%--<h1 id="title">--%>

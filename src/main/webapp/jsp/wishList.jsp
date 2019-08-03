@@ -1,4 +1,4 @@
-
+<%@ page import="com.ooad.web.model.WishListItem" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="com.ooad.web.model.WishListItem" %>
 
@@ -17,8 +17,8 @@
 </head>
 <body>
 <%@include file="header.jsp"%>
-<script src="/js/wishList.js"></script>
-<div class="container">
+<script src="../js/wishList.js"></script>
+<div class="container" style="margin-top: 40px;margin-bottom: 40px;">
     <div class="col-lg-12">
         <h1 id="pageTitle">Your Wishlist</h1>
         <span><h5><%=wishList.size()%> items in your wishlist</h5></span>

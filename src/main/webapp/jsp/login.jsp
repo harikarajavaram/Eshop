@@ -1,3 +1,4 @@
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 
@@ -65,14 +66,7 @@
 <div id="alerts"></div>
 <div id="a-page">
     <div class="a-section a-padding-medium auth-workflow">
-        <div class="a-section a-spacing-none auth-navbar">
-            <div class="a-section a-spacing-medium a-text-center">
-                <a class="a-link-nav-icon" tabindex="-1" href="/">
-                    <i class="a-icon a-icon-logo" aria-label="Tesco"><span class="a-icon-alt">Tesco</span></i>
-                    <i class="a-icon a-icon-domain-in a-icon-domain"></i>
-                </a>
-            </div>
-        </div>
+        
         <div class="a-section a-spacing-base auth-pagelet-container">
             <div id="auth-cookie-warning-message" class="a-box a-alert a-alert-warning">
                 <div class="a-box-inner a-alert-container">
@@ -126,11 +120,9 @@
                                     </div>
                                     <div class="a-section">
                                     <span id="continue" class="a-button a-button-span12 a-button-primary"><span
-                                            class="a-button-inner"><input id="continue" tabindex="5"
-                                                                          class="a-button-input" type="submit"
-                                                                          aria-labelledby="continue-announce"><span
+                                            class="a-button-inner"><input id="continue" tabindex="5" class="a-button-input" type="submit" aria-labelledby="continue-announce"><span
                                             id="continue-announce" class="a-button-text" aria-hidden="true">
-                                    continue
+                                    Continue
                                     </span></span>
                                     </span>
                                     </div>
@@ -170,35 +162,7 @@
                   </a></span></span>
             </div>
         </div>
-        <div id="right-2">
-        </div>
-        <div class="a-section a-spacing-top-extra-large auth-footer">
-            <div class="a-divider a-divider-section">
-                <div class="a-divider-inner"></div>
-            </div>
-            <div class="a-section a-spacing-small a-text-center a-size-mini">
-                <span class="auth-footer-seperator"></span>
-                <a class="a-link-normal" target="_blank" rel="noopener noreferrer"
-                   href="#">
-                    Conditions of Use
-                </a>
-                <span class="auth-footer-seperator"></span>
-                <a class="a-link-normal" target="_blank" rel="noopener noreferrer"
-                   href="#">
-                    Privacy Notice
-                </a>
-                <span class="auth-footer-seperator"></span>
-                <a class="a-link-normal" target="_blank" rel="noopener noreferrer" href="#">
-                    Help
-                </a>
-                <span class="auth-footer-seperator"></span>
-            </div>
-            <div class="a-section a-spacing-none a-text-center">
-                  <span class="a-size-mini a-color-secondary">
-                  © 1996-2018, Tesco.com, Inc. or its affiliates
-                  </span>
-            </div>
-        </div>
+        
     </div>
     <div id="auth-external-javascript" class="auth-external-javascript" data-external-javascripts="">
     </div>

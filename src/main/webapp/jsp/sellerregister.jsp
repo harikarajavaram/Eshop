@@ -4,9 +4,10 @@
 
 <html class="a-no-js" data-19ax5a9jf="dingo">
 
-
+<!-- Mirrored from www.tesco.in/ap/register?openid.pape.max_auth_age=0&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=inflex&ignoreAuthState=1&openid.return_to=https%3A%2F%2Fwww.tesco.in%2F%3Fref_%3Dnav_ya_signin&prevRID=BGCFEH3S0N4SV7D4H9AD&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 08 Feb 2018 10:27:53 GMT -->
+<!-- Added by HTTrack -->
 <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
-
+<!-- /Added by HTTrack -->
 
 <head>
     <meta charset="utf-8">
@@ -24,28 +25,7 @@
 
 <div id="a-page">
     <div class="a-section a-padding-medium auth-workflow">
-        <div class="a-section a-spacing-none auth-navbar">
-
-
-            <div class="a-section a-spacing-medium a-text-center">
-
-
-                <a class="a-link-nav-icon" tabindex="-1" href="/">
-
-
-                    <i class="a-icon a-icon-logo" aria-label="Tesco"><span class="a-icon-alt">Tesco</span></i>
-
-
-                    <i class="a-icon a-icon-domain-in a-icon-domain"></i>
-
-
-                </a>
-
-
-            </div>
-
-
-        </div>
+        
 
 
         <div class="a-section a-spacing-base auth-pagelet-container">
@@ -238,49 +218,9 @@
         </div>
 
 
-        <div id="right-2">
-        </div>
+        
 
-        <div class="a-section a-spacing-top-extra-large auth-footer">
-
-
-            <div class="a-divider a-divider-section">
-                <div class="a-divider-inner"></div>
-            </div>
-            <div class="a-section a-spacing-small a-text-center a-size-mini">
-                <span class="auth-footer-seperator"></span>
-
-
-                <a class="a-link-normal" target="_blank" rel="noopener noreferrer"
-                   href="https://www.tesco.in/gp/help/customer/display.html/ref=ap_desktop_footer_cou?ie=UTF8&amp;nodeId=200545940">
-                    Conditions of Use
-                </a>
-                <span class="auth-footer-seperator"></span>
-
-
-                <a class="a-link-normal" target="_blank" rel="noopener noreferrer"
-                   href="https://www.tesco.in/gp/help/customer/display.html/ref=ap_desktop_footer_privacy_notice?ie=UTF8&amp;nodeId=200534380">
-                    Privacy Notice
-                </a>
-                <span class="auth-footer-seperator"></span>
-
-
-                <a class="a-link-normal" target="_blank" rel="noopener noreferrer" href="https://www.tesco.in/help">
-                    Help
-                </a>
-                <span class="auth-footer-seperator"></span>
-
-
-            </div>
-
-            <div class="a-section a-spacing-none a-text-center">
-
-                    <span class="a-size-mini a-color-secondary">
-    © 1996-2018, Tesco.com, Inc. or its affiliates
-  </span>
-            </div>
-
-        </div>
+        
     </div>
 
     <div id="auth-external-javascript" class="auth-external-javascript" data-external-javascripts="">

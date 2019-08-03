@@ -32,7 +32,7 @@
 <body>
 <%@include file="header.jsp" %>
 
-<div class="container-fluid orders">
+<div class="container-fluid orders" style="margin-top: 40px;margin-bottom: 40px;">
     <div class="col-lg-12">
         <h1 id="pageTitle">Your Orders</h1>
         <span><h5><%=orderedItems.size()%> orders placed</h5></span>
@@ -68,7 +68,7 @@
                         <div>OrderId <b><%=o.getId()%></b></div>
                     </div>
                     <div class="col-lg-2">
-                        <img id = "prodImage<%=oi.getItem().getId()%>" width="150"  src="<%=oi.getItem().getUrl()%>" height="150" class = "img-responsive" alt="watch">
+                        <img id = "prodImage<%=oi.getItem().getId()%>" width="150"  src="<%=oi.getItem().getUrl()%>" height="150" class = "img-responsive" alt="">
                     </div>
                     <div class="col-lg-3 text-left">
                         <h1 id="title">

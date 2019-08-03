@@ -1,3 +1,4 @@
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -50,29 +51,7 @@
 
 <div id="a-page">
     <div class="a-section a-padding-medium auth-workflow">
-        <div class="a-section a-spacing-none auth-navbar">
-
-
-            <div class="a-section a-spacing-medium a-text-center">
-
-
-                <%--<a class="a-link-nav-icon" tabindex="-1" href="https://www.tesco.in/ref=ap_frn_logo">--%>
-                <a class="a-link-nav-icon" tabindex="-1" href="/">
-
-
-                    <i class="a-icon a-icon-logo" aria-label="Tesco"><span class="a-icon-alt">Tesco</span></i>
-
-
-                    <i class="a-icon a-icon-domain-in a-icon-domain"></i>
-
-
-                </a>
-
-
-            </div>
-
-
-        </div>
+        
 
 
         <div class="a-section a-spacing-base auth-pagelet-container">

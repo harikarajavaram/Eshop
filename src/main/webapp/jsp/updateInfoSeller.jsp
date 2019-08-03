@@ -35,7 +35,7 @@
 
             <div class="logo col-lg-2 col-md-2">
                 <a href="#" class="nav-logo-link">
-                    <img src="https://images-na.ssl-images-tesco.com/images/G/31/rainier/nav/sc-unified._CB360962420_.png">
+                    <img src="../images/logo.png" width="100px" height="35px">
                 </a>
             </div>
 

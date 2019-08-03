@@ -74,9 +74,7 @@
                 <div data-testid="">
                     <div class="a-fixed-left-grid aui-showgrid">
                         <div class="a-fixed-left-grid-inner" id="ppp-logo-inner">
-                            <div class="a-fixed-left-grid-col a-col-left aok-float-left" id="ppp-left-grid">
-                                <div class="a-row" id="ppp-left-row"><a href="#new-store"><img src="/images/pickup.png" width="115" height="33" border="0" /></a></div>
-                            </div>
+                            
                             <div class="a-fixed-left-grid-col a-col-right aok-float-left" id="ppp-right-grid">
                                 <div class="a-row">Orders for select areas in <a href="#"> select cities </a> can now be delivered to Tesco pickup locations.&nbsp;<a href="#new-store">Search for a Pickup location near you</a></div>
                             </div>
